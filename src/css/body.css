@@ -1,0 +1,50 @@
+@import url("../app/globals.css");
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button, .btn{
+    background: var(--t);
+    box-shadow: none;
+    border-radius: var(--br_btn);
+    padding: 7px;
+    padding-left: 21px;
+    padding-right: 21px;
+    transition: 0.1s ease-in-out;
+    backdrop-filter: none;
+}
+.ava{
+    box-shadow: var(--shadow);
+    background-color: var(--foreground);
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    img{
+        border-radius: 100%;
+    }
+}
+button:hover, .btn:hover{
+    background-color: var(--background);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(9px);
+    cursor: pointer;
+}
+.ava:hover, .nav_logo:hover{
+    cursor: pointer;
+}
+button:active, .btn:active{
+    filter: brightness(0.7);
+    box-shadow: var(--shadow);
+}
+.nav_logo:active, .ava:active{
+    filter: brightness(0.7);
+}

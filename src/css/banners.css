@@ -1,0 +1,37 @@
+@import url("../app/globals.css");
+.banner-container{
+    justify-self: flex-start;
+    width: 100%;
+    max-height: 300px;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .banner_wrapper{
+        min-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner{
+        width: calc(100% - 110px);
+        max-width: 960px;
+        border-radius: var(--br_);
+        box-shadow: var(--shadow);
+        height: 300px;
+    }
+    #b1{
+        background-color: blue;
+    }
+    #b2{
+        background-color: red;
+    }
+    #b3{
+        background-color: yellow;
+    }
+    #b4{
+        background-color: green;
+    }
+}
