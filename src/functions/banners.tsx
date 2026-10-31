@@ -1,6 +1,6 @@
 export default function Banners(){
     return(<>
-        <div className="banner-container">
+        <div className="banner-container" id="banner-container">
             <div className="banner_wrapper" id="bw1"><div className="banner" id="b1"></div></div>
             <div className="banner_wrapper" id="bw2"><div className="banner" id="b2"></div></div>
             <div className="banner_wrapper" id="bw3"><div className="banner" id="b3"></div></div>

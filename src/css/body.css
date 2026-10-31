@@ -12,8 +12,19 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
 }
 button, .btn{
+    background: var(--button);
+    box-shadow: none;
+    border-radius: var(--br_btn);
+    padding: 7px;
+    padding-left: 21px;
+    padding-right: 21px;
+    transition: 0.1s ease-in-out;
+    backdrop-filter: none;
+}
+.nav-btn{
     background: var(--t);
     box-shadow: none;
     border-radius: var(--br_btn);
@@ -38,10 +49,20 @@ button:hover, .btn:hover{
     backdrop-filter: blur(9px);
     cursor: pointer;
 }
+.nav-btn:hover{
+    background-color: var(--background);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(9px);
+    cursor: pointer;
+}
 .ava:hover, .nav_logo:hover{
     cursor: pointer;
 }
 button:active, .btn:active{
+    filter: brightness(0.7);
+    box-shadow: var(--shadow);
+}
+.nav-btn:active{
     filter: brightness(0.7);
     box-shadow: var(--shadow);
 }

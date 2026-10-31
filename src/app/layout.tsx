@@ -9,6 +9,7 @@ import "../css/body.css"
 import "../css/fonts.css"
 import "../css/404.css"
 import "../css/banners.css"
+import "../css/sections.css"
 
 import Nav from "@/functions/nav";
 
