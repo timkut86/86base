@@ -35,7 +35,6 @@ button, .btn{
     backdrop-filter: none;
 }
 .ava{
-    box-shadow: var(--shadow);
     background-color: var(--foreground);
     aspect-ratio: 1/1;
     border-radius: 100%;
@@ -43,7 +42,7 @@ button, .btn{
         border-radius: 100%;
     }
 }
-button:hover, .btn:hover{
+button:hover, .btn:hover, .banner_mn_btn:hover{
     background-color: var(--background);
     box-shadow: var(--shadow);
     backdrop-filter: blur(9px);
@@ -58,7 +57,10 @@ button:hover, .btn:hover{
 .ava:hover, .nav_logo:hover{
     cursor: pointer;
 }
-button:active, .btn:active{
+.ava:hover{
+    box-shadow: var(--shadow);
+}
+button:active, .btn:active, banner_mn_btn:active{
     filter: brightness(0.7);
     box-shadow: var(--shadow);
 }

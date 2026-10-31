@@ -19,8 +19,10 @@
         width: calc(100% - 110px);
         max-width: 960px;
         border-radius: var(--br_);
-        box-shadow: var(--shadow);
         height: 300px;
+    }
+    .banner:hover{
+        box-shadow: var(--shadow);
     }
     #b1{
         background-color: blue;
@@ -34,4 +36,20 @@
     #b4{
         background-color: green;
     }
+}
+.banner_mn_btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    transform: translateY(-170px);
+}
+.banner_mn_btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: var(--button);
+    box-shadow: var(--shadow);
 }

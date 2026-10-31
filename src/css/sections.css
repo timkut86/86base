@@ -25,6 +25,10 @@
             width: 300px;
             height: 400px;
             border-radius: 15px;
+            box-shadow: none;
+            background-color: var(--button);
+        }
+        .card1:hover{
             box-shadow: var(--shadow);
         }
     }
