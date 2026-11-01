@@ -9,6 +9,7 @@
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+    margin-bottom: -40px;
     .banner_wrapper{
         min-width: 100%;
         display: flex;
