@@ -1,5 +1,6 @@
 @import url("../app/globals.css");
 .nav{
+    z-index: 1000;
     backdrop-filter: blur(9px);
     background-color: var(--button);
     width: calc(100% - 50px);
