@@ -27,6 +27,7 @@
             border-radius: 15px;
             box-shadow: none;
             background-color: var(--button);
+            margin-bottom: 40px;
         }
         .card1:hover{
             box-shadow: var(--shadow);
