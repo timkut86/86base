@@ -6,13 +6,11 @@ export default function Banners(){
     function switch_banners1(){
         banner_let.current += 1;
         if (banner_let.current == 4) banner_let.current = 0;
-        console.log(banner_let.current)
         update()
     }
     function switch_banners2(){
         banner_let.current -= 1;
         if (banner_let.current == -1) banner_let.current = 3;
-        console.log(banner_let.current)
         update()
     }
     function update(){
@@ -20,7 +18,7 @@ export default function Banners(){
     }
     return(<>
         <div className="banner-container" id="banner-container">
-            <div className="banner_wrapper" id="bw1" style={banner_postion}><div className="banner" id="b1"></div></div>
+            <div className="banner_wrapper" id="bw1" style={banner_postion}><div className="banner" id="b1"><img src="/Room/room_logo_light.svg"/><p className="ROOM-m">SHARE YOUR MOMENTS</p><img src="/"/><button>Enter</button></div></div>
             <div className="banner_wrapper" id="bw2" style={banner_postion}><div className="banner" id="b2"></div></div>
             <div className="banner_wrapper" id="bw3" style={banner_postion}><div className="banner" id="b3"></div></div>
             <div className="banner_wrapper" id="bw4" style={banner_postion}><div className="banner" id="b4"></div></div>
