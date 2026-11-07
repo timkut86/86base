@@ -17,7 +17,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={``}
+      className={`light`}
     >
       <body className="">
         <Nav/>
