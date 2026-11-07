@@ -28,6 +28,29 @@
             box-shadow: none;
             background-color: var(--button);
             margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 16px;
+            img{
+                border-radius: var(--br_);
+                width: 100%;
+                aspect-ratio: 16/9;
+                margin-bottom: 16px;
+                box-shadow: var(--shadow);
+            }
+            h3{
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+            p{
+                height: 100%;
+            }
+            button{
+                justify-self: flex-end;
+                align-self: flex-end;
+            }
         }
         .card1:hover{
             box-shadow: var(--shadow);
