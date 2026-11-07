@@ -1,18 +1,22 @@
 "use client"; 
-import { useState } from "react";
+import { useRef, useState } from "react";
 export default function Banners(){
-    let banner_let = 0
-    const [banner_postion, setPosition] = useState({transform: `translateX(${-100 * banner_let}%)`})
+    let banner_let = useRef(0)
+    const [banner_postion, setPosition] = useState({transform: `translateX(${-100 * banner_let.current}%)`})
     function switch_banners1(){
-        banner_let += 1;
-        if (banner_let == 4) banner_let = 0;
+        banner_let.current += 1;
+        if (banner_let.current == 4) banner_let.current = 0;
+        console.log(banner_let.current)
+        update()
     }
     function switch_banners2(){
-        banner_let -= 1;
-        if (banner_let == -1) banner_let = 3;
+        banner_let.current -= 1;
+        if (banner_let.current == -1) banner_let.current = 3;
+        console.log(banner_let.current)
+        update()
     }
     function update(){
-        setPosition({transform: `translateX(${-100 * banner_let}%)`});
+        setPosition({transform: `translateX(${-100 * banner_let.current}%)`});
     }
     return(<>
         <div className="banner-container" id="banner-container">
