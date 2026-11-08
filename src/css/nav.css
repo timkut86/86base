@@ -54,3 +54,11 @@
             box-shadow: none;
     }
 }
+@media(max-width: 1000px){
+    .nav .nav_buttons{
+        display: none;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+}

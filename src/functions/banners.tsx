@@ -1,5 +1,6 @@
 "use client"; 
-import { useRef, useState } from "react";
+import { useRef, useState, Suspense } from "react";
+import Loading from "@/app/loading";
 export default function Banners(){
     let banner_let = useRef(0)
     const [banner_postion, setPosition] = useState({transform: `translateX(${-100 * banner_let.current}%)`})
@@ -17,8 +18,9 @@ export default function Banners(){
         setPosition({transform: `translateX(${-100 * banner_let.current}%)`});
     }
     return(<>
+    <Suspense fallback={<Loading/>}>
         <div className="banner-container" id="banner-container">
-            <div className="banner_wrapper" id="bw1" style={banner_postion}><div className="banner" id="b1"><img src="/Room/room_logo_light.svg"/><p className="ROOM-m">SHARE YOUR MOMENTS</p><img src="/"/><button>Enter</button></div></div>
+            <div className="banner_wrapper" id="bw1" style={banner_postion}><div className="banner" id="b1"><img src="/Room/room_logo_light.svg"/><p className="ROOM-m">SHARE YOUR MOMENTS</p><img src="/Room/room_icons_1.png"/><button>Enter</button></div></div>
             <div className="banner_wrapper" id="bw2" style={banner_postion}><div className="banner" id="b2"></div></div>
             <div className="banner_wrapper" id="bw3" style={banner_postion}><div className="banner" id="b3"></div></div>
             <div className="banner_wrapper" id="bw4" style={banner_postion}><div className="banner" id="b4"></div></div>
@@ -27,5 +29,6 @@ export default function Banners(){
             <div className="banner_mn_btn" id="banner_mn_btn_1" onClick={switch_banners2}><div/><img src="/icons/light_theme/Arrow left.svg" className="lt"/><img src="/icons/dark_theme/Arrow left.svg" className="dt"/></div>
             <div className="banner_mn_btn" id="banner_mn_btn_2" onClick={switch_banners1}><div/><img src="/icons/light_theme/Arrow right.svg" className="lt"/><img src="/icons/dark_theme/Arrow right.svg" className="dt"/></div>
         </div>
+    </Suspense>
     </>)
 }

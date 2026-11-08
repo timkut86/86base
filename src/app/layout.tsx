@@ -4,6 +4,8 @@ export const metadata: Metadata = {
   description: "",
 };
 
+import { Suspense } from "react";
+
 import "./globals.css";
 import "../css/body.css"
 import "../css/fonts.css"
@@ -12,17 +14,20 @@ import "../css/banners.css"
 import "../css/sections.css"
 
 import Nav from "@/functions/nav";
+import Loading from "./loading";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`light`}
+      className={``}
     >
       <body className="">
         <Nav/>
         <main>
-          {children}
+          <Suspense fallback={<Loading/>}>
+            {children}
+          </Suspense>
         </main>
       </body>
     </html>
