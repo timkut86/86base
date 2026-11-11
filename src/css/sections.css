@@ -33,7 +33,7 @@
             height: 400px;
             border-radius: 15px;
             box-shadow: none;
-            background-color: var(--button);
+            background-color: var(--t_background);
             margin-bottom: 16px;
             display: flex;
             flex-direction: column;

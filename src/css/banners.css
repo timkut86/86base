@@ -22,7 +22,6 @@
         width: calc(100% - 80px);
         max-width: 960px;
         border-radius: var(--br_);
-        box-shadow: var(--shadow);
         height: 300px;
     }
     .banner:active{
@@ -87,7 +86,7 @@
     height: 40px;
     width: 40px;
     border-radius: 100%;
-    background-color: var(--button);
+    background-color: var(--t_background);
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -1,0 +1,58 @@
+button, .btn{
+    background: var(--t_background);
+    box-shadow: none;
+    border-radius: var(--br_btn);
+    padding: 7px;
+    padding-left: 21px;
+    padding-right: 21px;
+    transition: 0.1s ease-in-out;
+    backdrop-filter: none;
+    box-shadow: var(--shadow);
+}
+.nav-btn{
+    background: var(--t);
+    box-shadow: none;
+    border-radius: var(--br_btn);
+    padding: 7px;
+    padding-left: 21px;
+    padding-right: 21px;
+    transition: 0.1s ease-in-out;
+    backdrop-filter: none;
+}
+.ava{
+    background-color: var(--foreground);
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    img{
+        border-radius: 100%;
+    }
+}
+button:hover, .btn:hover, .banner_mn_btn:hover{
+    background-color: var(--background);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(9px);
+    cursor: pointer;
+}
+.nav-btn:hover{
+    background-color: var(--background);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(9px);
+    cursor: pointer;
+}
+.ava:hover, .nav_logo:hover{
+    cursor: pointer;
+}
+.ava:hover{
+    box-shadow: var(--shadow);
+}
+button:active, .btn:active, banner_mn_btn:active{
+    filter: brightness(0.7);
+    box-shadow: var(--shadow);
+}
+.nav-btn:active{
+    filter: brightness(0.7);
+    box-shadow: var(--shadow);
+}
+.nav_logo:active, .ava:active{
+    filter: brightness(0.7);
+}
