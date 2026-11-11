@@ -5,20 +5,20 @@
   :root:not(.dark){
     --background: rgba(245, 245, 245, 1);
     --foreground: rgba(10, 10, 10, 1);
-    --t_background: rgba(235, 235, 235, 0.7);
-    --f_background: rgba(20, 20, 20, 0.7);
-    --shadow: 0px 0px 1px 1px rgba(10, 10, 10, 0.25); /*use 'box-shadow' */
+    --t_background: rgba(240, 240, 240, 0.7);
+    --f_background: rgba(15, 15, 15, 0.7);
+    --nav: rgba(245, 245, 245, 0.7);
     --theme: light_theme;
   }
 }
 @media(prefers-color-scheme: dark){
   :root:not(.light) {
     --background: rgba(10, 10, 10, 1);
-    --foreground: rgba(245, 245, 245, 0.7);
-    --f_background: rgba(235, 235, 235, 0.7);
-    --t_background: rgba(20, 20, 20, 0.7);
-    --shadow: 0px 0px 1px 1px rgba(245, 245, 245, 0.25); /*use 'box-shadow' */
-    --theme: dark_theme;
+    --foreground: rgba(245, 245, 245, 1);
+    --f_background: rgba(240, 240, 240, 0.7);
+    --t_background: rgba(15, 15, 15, 0.7);
+    --nav: rgba(10, 10, 10, 0.7);
+    --theme: dark_theme;;
   }
 }
 @media(prefers-color-scheme: light){
@@ -38,16 +38,16 @@
 
 /*settings and neutral colors*/
 :root {
-  --neutral: rgba(103.5, 103, 103, 1);
-  --br_: 15px;
-  --br_btn: 20px;
+  --neutral: rgba(128, 128, 128, 1);
+  --shadow: 0 0 2px 1px rgba(128, 128, 128, 0.2);
+  --br_: 12px;
+  --br_btn: 12px;
   --t: rgba(0, 0, 0, 0);
 }
 
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
   color: var(--foreground);
 }

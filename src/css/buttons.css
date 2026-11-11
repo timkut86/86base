@@ -34,9 +34,6 @@ button:hover, .btn:hover, .banner_mn_btn:hover{
     cursor: pointer;
 }
 .nav-btn:hover{
-    background-color: var(--background);
-    box-shadow: var(--shadow);
-    backdrop-filter: blur(9px);
     cursor: pointer;
 }
 .ava:hover, .nav_logo:hover{
@@ -51,7 +48,6 @@ button:active, .btn:active, banner_mn_btn:active{
 }
 .nav-btn:active{
     filter: brightness(0.7);
-    box-shadow: var(--shadow);
 }
 .nav_logo:active, .ava:active{
     filter: brightness(0.7);

@@ -31,7 +31,7 @@
         .card1{
             width: 300px;
             height: 400px;
-            border-radius: 15px;
+            border-radius: var(--br_);
             box-shadow: none;
             background-color: var(--t_background);
             margin-bottom: 16px;
@@ -40,6 +40,7 @@
             justify-content: flex-start;
             align-items: flex-start;
             padding: 16px;
+            box-shadow: var(--shadow);
             @media (max-width: 1000px){
                 width: 100%;
                 height: auto;
@@ -57,14 +58,12 @@
             }
             p{
                 height: 100%;
+                margin-bottom: 8px;
             }
             button{
                 justify-self: flex-end;
                 align-self: flex-end;
             }
-        }
-        .card1:hover{
-            box-shadow: var(--shadow);
         }
     }
 }

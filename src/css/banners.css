@@ -23,6 +23,7 @@
         max-width: 960px;
         border-radius: var(--br_);
         height: 300px;
+        box-shadow: var(--shadow);
     }
     .banner:active{
         filter: brightness(0.7);
