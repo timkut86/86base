@@ -15,6 +15,7 @@ export default function Footer(){
                 <Link className="btn "href="services">Services</Link>
                 <Link className="btn "href="account">Your ID</Link>
                 <Link className="btn "href="settings">Settings</Link>
+                <Link className="btn "href="support">Support</Link>
             </div>
         </footer>
     </>)

@@ -1,0 +1,177 @@
+@import url("../app/globals.css");
+.account_page{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+}
+.account_menu{
+    background-color: var(--t_background);
+    padding: 16px;
+    box-shadow: var(--shadow);
+    border-radius: var(--br_);
+    width: 300px;
+    height: 304px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 48px;
+}
+.account_menu_buttons{
+    width: 100%;
+}
+.account_menu_btn{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: left;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    img{
+        margin-right: 16px;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media(max-width: 1000px){
+    .account_page{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media(max-width: 648px){
+    .account_menu{
+        display: none;
+    }
+}
+.account_page_main{
+    width: 100%;
+    .apm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .apm1_user{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .apm1_user_text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin-left: 16px;
+                height: 100%;
+                margin-bottom: 16px;
+            }
+            img{
+                height: 72px;
+                width: 72px;
+                border-radius: 100%;
+            }
+            p.fw4{
+                font-size: 12px;
+                color: gray;
+            }
+            p.fw5{
+                font-size: 24px;
+                color: var(--foreground);
+            }
+        }
+        .apm1_button{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: var(--br_);
+            margin-top: 32px;
+            img{
+                height: 20px;
+                width: 20px;
+            }
+            .apm1_button_text{
+                margin-left: 17px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: left;
+                .fw4{
+                    color: gray;
+                }
+            }
+        }
+        .apm_title{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            button{
+                margin-right: 24px;
+            }
+            h2{
+                font-size: 32px;
+            }
+        }
+        .apm_string{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 16px;
+            padding-left: 40px;
+            padding-right: 40px;
+            p.fw5{
+                width: 220px;
+                margin: 0;
+            }
+            p.fw4{
+                margin: 0;
+                width: 100%;
+                text-align: right;
+                color: gray;
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 100%;
+                }
+            }
+            button{
+                margin-left: 16px;
+            }
+        }
+        .apms2{
+            p.fw5{
+                width: 100%;
+            }
+        }
+        h2.apm_{
+            font-size: 32px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        p.apm_{
+            text-align: left;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        button.apm_{
+            align-self: flex-start;
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -14,6 +14,7 @@ import "../css/banners.css"
 import "../css/sections.css"
 import "../css/buttons.css"
 import "../css/footer.css"
+import "../css/account.css"
 
 import Nav from "@/functions/nav";
 import Loading from "./loading";
