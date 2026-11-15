@@ -13,9 +13,11 @@ import "../css/404.css"
 import "../css/banners.css"
 import "../css/sections.css"
 import "../css/buttons.css"
+import "../css/footer.css"
 
 import Nav from "@/functions/nav";
 import Loading from "./loading";
+import Footer from "@/functions/footer";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -30,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             {children}
           </Suspense>
         </main>
+        <Footer/>
       </body>
     </html>
   );
