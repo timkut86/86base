@@ -103,7 +103,7 @@ export default function _86bid_page(){
                             <button><img src="/icons/light_theme/Edit 2.svg" className="lt"/><img src="/icons/dark_theme/Edit 2.svg" className="dt"/></button>
                         </div>
                         <h2 className="fw5 apm_">Recovery Code</h2>
-                        <p className="apm_">This code can be used once for logging on your ID.<br></br>Last generated:</p>
+                        <p className="apm_">This code can be used once.<br></br>Last generated:</p>
                         <button className="apm_">Generate</button>
                         <h2 className="fw5 apm_">Delete your ID</h2>
                         <button className="apm_">Delete</button>
@@ -122,18 +122,29 @@ export default function _86bid_page(){
                         </div>
                         <h2 className="fw5 apm_">My privacy in the SET</h2>
                         <div className="apm_string apms2">
-                            <p className="fw5">Everyone sees "WHO?" instead of my name in all my reviews</p>
+                            <p className="fw5">Hide my name and photo in my reviews</p>
                         </div>
-                        <div className="line"></div>
-                        <div className="apm_string apms2">
-                            <p className="fw5">Don't recomend products to me</p>
-                        </div>
+                        <h2 className="fw5 apm_">Your devices</h2>
                     </div>
                     <div className="apm" id="apm3" style={apm_page[3]}>
                         <div className="apm_title">
                             <button className="round" onClick={changeTo1}><img src="/icons/light_theme/Arrow Left.svg" className="lt"/><img src="/icons/dark_theme/Arrow Left.svg" className="dt"/></button>
                             <h2 className="fw5">Payments</h2>
                         </div>
+                        <div className="apm_string">
+                            <p className="fw5">86B Card</p>
+                            <p className="fw4">$XXX</p>
+                            <button><img src="/icons/light_theme/Arrow Right.svg" className="lt"/><img src="/icons/dark_theme/Arrow Right.svg" className="dt"/></button>
+                        </div>
+                        <div className="line"></div>
+                        <div className="apm_string">
+                            <p className="fw5">Other cards</p>
+                            <p className="fw4">2</p>
+                            <button><img src="/icons/light_theme/Edit 2.svg" className="lt"/><img src="/icons/dark_theme/Edit 2.svg" className="dt"/></button>
+                        </div>
+                        <h2 className="fw5 apm_">Your transactions</h2>
+                        <h2 className="fw5 apm_">Clear your transaction history</h2>
+                        <button className="apm_">Clear</button>
                     </div>
                 </div>
             </div>
