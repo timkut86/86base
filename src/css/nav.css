@@ -1,18 +1,11 @@
 @import url("../app/globals.css");
 .nav{
-    z-index: 1000;
-    backdrop-filter: blur(9px);
-    background-color: var(--nav);
     width: calc(100% - 50px);
-    box-shadow: var(--shadow);
     max-width: 1000px;
     height: 60px;
-    border-radius: var(--br_);
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
-    top: 40px;
     padding-right: 30px;
     padding-left: 30px;
     .nav_buttons{
@@ -61,4 +54,17 @@
     .nav{
         justify-content: space-between;
     }
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 140px;
+    z-index: 1000;
+    height: 120px;
+    background: linear-gradient(var(--background) 25%, rgba(0, 0, 0, 0));
 }
