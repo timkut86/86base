@@ -24,5 +24,5 @@ export default /*async*/ function News() {
             </div>
         </main>
     </>);*/
-    return
+    return <></>
 }

@@ -19,5 +19,5 @@ export default /*async*/ function Home_news(){
             <Link className="btn fw5" href="news">More</Link>
         </div>
     </>)*/
-    return
+    return <></>
 }
