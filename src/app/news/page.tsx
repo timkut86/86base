@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "News - 86base",
   description: "",
 };
-export default async function News() {
+export default /*async*/ function News() {
     /*'use cache'
     const result = await pool.query<NewsIF>(
         'SELECT * FROM _86base_news ORDER BY id'
@@ -24,4 +24,5 @@ export default async function News() {
             </div>
         </main>
     </>);*/
+    return
 }
