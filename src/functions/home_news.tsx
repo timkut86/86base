@@ -3,7 +3,7 @@ import NewsIF from "@/entities/news";
 import Link from "next/link"
 import { Card1 } from "./cards"
 export default async function Home_news(){
-    'use cache'
+    /*'use cache'
     const result = await pool.query<NewsIF>(
         'SELECT * FROM _86base_news ORDER BY id'
     );
@@ -18,5 +18,5 @@ export default async function Home_news(){
             </div>
             <Link className="btn fw5" href="news">More</Link>
         </div>
-    </>)
+    </>)*/
 }
