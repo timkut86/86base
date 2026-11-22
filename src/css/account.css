@@ -5,23 +5,18 @@
     display: flex;
 }
 .account_menu{
-    background-color: var(--t_background);
-    padding: 16px;
-    box-shadow: var(--shadow);
-    border-radius: var(--br_);
     width: 300px;
     height: 304px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-right: 48px;
 }
 .account_menu_buttons{
     width: 100%;
 }
 .account_menu_btn{
-    margin-top: 24px;
     margin-bottom: 24px;
     width: 100%;
     text-align: left;
@@ -46,6 +41,9 @@
 @media(max-width: 648px){
     .account_menu{
         display: none;
+    }
+    .account_page_main{
+        margin-top: -36px;
     }
 }
 .account_page_main{

@@ -10,3 +10,17 @@
         font-size: 48px;
     }
 }
+.error{
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 24px;
+    padding-right: 24px;
+    h2{
+        font-size: 48px;
+        margin-bottom: 8px;
+    }
+    p{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+}
