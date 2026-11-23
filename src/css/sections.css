@@ -60,7 +60,7 @@
                 height: 100%;
                 margin-bottom: 8px;
             }
-            button{
+            button, .btn{
                 justify-self: flex-end;
                 align-self: flex-end;
             }
