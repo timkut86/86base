@@ -20,7 +20,7 @@ export default async function News() {
                 <div className="section1 home_news">
                     <div className="cards1">
                         {news.map((nn) => (
-                            <div className="card1 home_news" key={nn.id}>{<Card1 title={nn.title} text={nn.text} btn_text="More" img="/"></Card1>}</div>
+                            <div className="card1 home_news" key={nn.id}>{<Card1 title={nn.title} text={nn.text} btn_text="More" img="/" l=""></Card1>}</div>
                         ))}
                     </div>
                 </div>
