@@ -2,18 +2,21 @@
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 export default function _86bid_page(){
-    const [apm_page, set_apmp] = useState([{display: `flex`}, {display: `none`}, {display: `none`}, {display: `none`}])
+    const [apm_page, set_apmp] = useState([{display: `flex`}, {display: `none`}, {display: `none`}, {display: `none`}, {display: `none`}])
     function changeTo1(){
-        set_apmp([{display: `flex`}, {display: `none`}, {display: `none`}, {display: `none`}])
+        set_apmp([{display: `flex`}, {display: `none`}, {display: `none`}, {display: `none`}, {display: `none`}])
     }
     function changeTo2(){
-        set_apmp([{display: `none`}, {display: `flex`}, {display: `none`}, {display: `none`}])
+        set_apmp([{display: `none`}, {display: `flex`}, {display: `none`}, {display: `none`}, {display: `none`}])
     }
     function changeTo3(){
-        set_apmp([{display: `none`}, {display: `none`}, {display: `flex`}, {display: `none`}])
+        set_apmp([{display: `none`}, {display: `none`}, {display: `flex`}, {display: `none`}, {display: `none`}])
     }
     function changeTo4(){
-        set_apmp([{display: `none`}, {display: `none`}, {display: `none`}, {display: `flex`}])
+        set_apmp([{display: `none`}, {display: `none`}, {display: `none`}, {display: `flex`}, {display: `none`}])
+    }
+    function changeTo5(){
+        set_apmp([{display: `none`}, {display: `none`}, {display: `none`}, {display: `none`}, {display: `flex`}])
     }
     return(<>
         <main>
@@ -26,6 +29,7 @@ export default function _86bid_page(){
                         <button className="account_menu_btn" onClick={changeTo2}><img src="/icons/light_theme/User.svg" className="lt"/><img src="/icons/dark_theme/User.svg" className="dt"/>Personal Info</button>
                         <button className="account_menu_btn" onClick={changeTo3}><img src="/icons/light_theme/Shield.svg" className="lt"/><img src="/icons/dark_theme/Shield.svg" className="dt"/>Privacy</button>
                         <button className="account_menu_btn" onClick={changeTo4}><img src="/icons/light_theme/Credit card.svg" className="lt"/><img src="/icons/dark_theme/Credit card.svg" className="dt"/>Payments</button>
+                        <button className="account_menu_btn" onClick={changeTo5}><img src="/icons/light_theme/Layout.svg" className="lt"/><img src="/icons/dark_theme/Layout.svg" className="dt"/>Services</button>
                     </div>
                 </div>
                 <div className="account_page_main">
@@ -58,6 +62,14 @@ export default function _86bid_page(){
                             <div className="apm1_button_text">
                                 <p className="fw5">Payments</p>
                                 <p className="fw4">Add and delete your payments</p>
+                            </div>
+                            <img src="/icons/light_theme/Arrow right.svg" className="lt apm1_button_image"/><img src="/icons/dark_theme/Arrow right.svg" className="dt apm1_button_image"/>
+                        </button>
+                        <button className="apm1_button" onClick={changeTo5}>
+                            <img src="/icons/light_theme/Layout.svg" className="lt apm1_button_image"/><img src="/icons/dark_theme/Layout.svg" className="dt apm1_button_image"/>
+                            <div className="apm1_button_text">
+                                <p className="fw5">Services</p>
+                                <p className="fw4">Your data on 86B services</p>
                             </div>
                             <img src="/icons/light_theme/Arrow right.svg" className="lt apm1_button_image"/><img src="/icons/dark_theme/Arrow right.svg" className="dt apm1_button_image"/>
                         </button>
@@ -145,6 +157,12 @@ export default function _86bid_page(){
                         <h2 className="fw5 apm_">Your transactions</h2>
                         <h2 className="fw5 apm_">Clear your transaction history</h2>
                         <button className="apm_">Clear</button>
+                    </div>
+                    <div className="apm" id="apm3" style={apm_page[4]}>
+                        <div className="apm_title">
+                            <button className="round" onClick={changeTo1}><img src="/icons/light_theme/Arrow Left.svg" className="lt"/><img src="/icons/dark_theme/Arrow Left.svg" className="dt"/></button>
+                            <h2 className="fw5">Services</h2>
+                        </div>
                     </div>
                 </div>
             </div>
